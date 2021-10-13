@@ -1,0 +1,56 @@
+###
+#Simple CRUD Project
+GET http://127.0.0.1:8000/api/v1/project/
+
+
+###
+POST http://127.0.0.1:8000/api/v1/project/
+Content-Type: application/json
+
+{
+    "name": "Датчик температуры 4",
+    "latitude": 33.27,
+    "longitude": 71.25
+}
+
+###
+PATCH  http://127.0.0.1:8000/api/v1/project/1/
+Content-Type: application/json
+
+{
+    "name": "Датчик температуры 1",
+    "latitude": 35.27,
+    "longitude": 73.25
+}
+
+###
+DELETE  http://127.0.0.1:8000/api/v1/project/4/
+Content-Type: application/json
+
+###
+#Simple CRUD Measurement
+GET http://127.0.0.1:8000/api/v1/measurement/
+
+###
+POST http://127.0.0.1:8000/api/v1/measurement/
+Content-Type: application/json
+
+{
+    "value": 17.25,
+    "project": 3
+}
+
+###
+PATCH  http://127.0.0.1:8000/api/v1/measurement/1/
+Content-Type: application/json
+
+{
+    "value": 35.27,
+    "project": 2
+}
+
+###
+DELETE  http://127.0.0.1:8000/api/v1/measurement/4
+Content-Type: application/json
+
+###
