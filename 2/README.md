@@ -10,7 +10,7 @@ docker build -t simple_crud simple_crud/
 1. Установить свои переменные окружения в файле `env`
 2. Создать и запустить контейнер
 ```bash
-docker run -d -p 8000:8000 --name simple_crud --env-file .env simple_crud
+docker run -d -p 8000:8000 --name simple_crud --env-file env simple_crud
 ```
 
 Для проверки работоспособности использовать файл request.html
